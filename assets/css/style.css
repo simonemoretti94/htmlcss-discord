@@ -5,7 +5,8 @@
 }
 
 :root {
-    --brand: #5865f2;
+    --brand: #255ee9;
+    --brand-gradient: linear-gradient(90deg,#8ea1e1,#7289da);
     --writings-header: #fff;
     --back-header: rgb(123, 255, 255);
     --back-row-header: rgb(255, 184, 52);
@@ -25,33 +26,35 @@
 .debug header {
     /* background-color: var(--back-header); */
     background-color: var(--brand);
-    border: dashed 1px rgb(50, 50, 255);
+    /* border: dashed 1px rgb(50, 50, 255); */
 }
 
 .debug .row-header {
     /* background-color: var(--back-row-header); */
     background-color: var(--brand);
-    border: dashed 1px rgb(50, 50, 255);
+    /* border: dashed 1px rgb(50, 50, 255); */
 }
 
 .debug .header-logo {
-    border: dashed 1px rgb(50, 50, 255);
+    /* border: dashed 1px rgb(50, 50, 255); */
 }
 
 .debug .header-login {
-    border: dashed 1px rgb(50, 50, 255);
+    /* border: dashed 1px rgb(50, 50, 255); */
 }
 
 .debug .col1 {
-    border: dashed 1px rgb(50, 50, 255);
+    /* border: dashed 1px rgb(50, 50, 255); */
 }
 
 .debug .first-submain-blue {
     display: flex;
     width: 100%;
     height: 400px;
-    background-color: var(--back-first-submain-blue);
-    border: dashed 1px rgb(50, 50, 255);
+    /* background-color: var(--back-first-submain-blue); */
+    background-image: url("../images/subheader-main-crew.png");
+    background-size: contain;
+    /* border: dashed 1px rgb(50, 50, 255); */
 }
 
 .debug .rectangle-purple1{
@@ -146,9 +149,10 @@ body {
 
 .row-header {
     display: flex;
-    width: 80%;
+    width: 90%;
     height: 80%;
-    margin: auto;
+    margin: 10px auto auto auto;
+    padding-top: 20px;
 }
 
 .header-logo {
@@ -161,6 +165,16 @@ body {
     margin: auto;
     width: calc((100%/12)*1);
     text-align: right;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: small;
+    /* padding: 6px 6px 6px 6px; */
+}
+
+.header-login-subdiv {
+    background-color: #fff;
+    display: unset;
+    padding: 10px 15px 10px 15px;
+    border-radius: 20px;
 }
 
 .col1 {
@@ -168,6 +182,8 @@ body {
     width: calc((100%/12)*1);
     text-align: center;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: small;
+    font-weight: 500;
     text-decoration: none;
     color: white;
 }
