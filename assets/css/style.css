@@ -35,25 +35,25 @@
     /* border: dashed 1px rgb(50, 50, 255); */
 }
 
-.debug .header-logo {
-    /* border: dashed 1px rgb(50, 50, 255); */
-}
+/* .debug .header-logo {
+    border: dashed 1px rgb(50, 50, 255);
+} */
 
-.debug .header-login {
-    /* border: dashed 1px rgb(50, 50, 255); */
-}
+/* .debug .header-login {
+    border: dashed 1px rgb(50, 50, 255);
+} */
 
-.debug .col1 {
-    /* border: dashed 1px rgb(50, 50, 255); */
-}
+/* .debug .col1 {
+    border: dashed 1px rgb(50, 50, 255);
+} */
 
 .debug .breathing-space {
-    height: 100px;
+    height: 50px;
     width: 100%;
     background-color: var(--brand);
 }
 
-.debug .imagine-a-space-div {
+.debug .imagine-a-space-div1 {
     width: 100%;
     background-color: var(--brand);
     background-image: url("../images/stars.svg");
@@ -61,19 +61,51 @@
     
 }
 
-.debug .first-submain-blue {
-    display: flex;
+.debug .imagine-a-space-div2 {
     width: 100%;
-    height: 400px;
+    height: fit-content;
+}
+
+.debug .imagine-a-space-div3 {
+    display: flex;
+    align-content: space-between;
+    justify-content: space-evenly;
+}
+
+.debug .p1-first-submain {
+    background-color: white;
+    color: black;
+    font-family: sans-serif;
+    font-size: large;
+    padding: 20px 20px 20px 20px;
+    border-radius: 35px;
+}
+
+.debug .p2-first-submain {
+    background-color: black;
+    color: white;
+    font-family: sans-serif;
+    font-size: large;
+    padding: 20px 20px 20px 20px;
+    border-radius: 35px;
+}
+
+.debug .first-submain-blue {
+    /* display: flex; */
+    width: 100%;
+    height: 250px;
     /* background-color: var(--back-first-submain-blue); */
     background-image: url("../images/subheader-main-crew.png");
-    background-size: contain;
+    background-position-y: center;
+    background-repeat: no-repeat;
+    background-size: cover;
     /* border: dashed 1px rgb(50, 50, 255); */
 }
 
 .debug .rectangle-purple1{
-    background-color: var(--back-rectangle-purple);
-    border: dashed 1px rgb(50, 50, 255);
+    /* background-color: var(--back-rectangle-purple); */
+    backface-visibility: visible;
+    /* border: dashed 1px rgb(50, 50, 255); */
 }
 
 .debug .second-fourth-submain {
@@ -213,6 +245,17 @@ h1 {
     font-weight:bolder;
     color: white;
 }
+
+h2 {
+    text-align: center;
+    font-size: large;
+    font-family: sans-serif;
+    color: white;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+
 
 .rectangle-purple1 {
     width: 50%;
