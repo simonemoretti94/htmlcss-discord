@@ -47,6 +47,20 @@
     /* border: dashed 1px rgb(50, 50, 255); */
 }
 
+.debug .breathing-space {
+    height: 100px;
+    width: 100%;
+    background-color: var(--brand);
+}
+
+.debug .imagine-a-space-div {
+    width: 100%;
+    background-color: var(--brand);
+    background-image: url("../images/stars.svg");
+    background-repeat: repeat-x;
+    
+}
+
 .debug .first-submain-blue {
     display: flex;
     width: 100%;
@@ -147,6 +161,10 @@ body {
     min-width: 110px;
 }
 
+header {
+    overflow-y: auto;
+}
+
 .row-header {
     display: flex;
     width: 90%;
@@ -185,6 +203,14 @@ body {
     font-size: small;
     font-weight: 500;
     text-decoration: none;
+    color: white;
+}
+
+h1 {
+    text-align: center;
+    font-size: 60px;
+    font-family: sans-serif;
+    font-weight:bolder;
     color: white;
 }
 
@@ -243,3 +269,4 @@ body {
     color: black;
     padding: 5px 7px 5px 7px;
 }
+
