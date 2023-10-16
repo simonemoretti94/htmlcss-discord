@@ -1,315 +1,317 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: 0;
+/* Debug */
+.debug .talk
+{
+	background-color: var(--discord-white);
 }
 
-:root {
-    --brand: #255ee9;
-    --brand-gradient: linear-gradient(90deg,#8ea1e1,#7289da);
-    --writings-header: #fff;
-    --back-header: rgb(123, 255, 255);
-    --back-row-header: rgb(255, 184, 52);
-    --back-first-submain-blue: rgb(0, 0, 210);
-    --back-rectangle-purple: rgb(202, 102, 202);
-    --back-second-fourth-submain-light: rgb(250, 235, 235);
-    --back-third-fifth-submain-grey: rgb(177, 177, 177);
-    --back-sixth-submain-footer-black: black;
-    --back-rectangle-blue: rgb(28, 96, 243);
-    --back-rectangle-pink: rgb(249, 200, 208);
-    --back-rectangle-green: rgb(1, 121, 1);
-    --back-narrow-rectangles-blue: rgb(78, 185, 217);
-    --back-footer-row-aqua: rgb(51, 248, 248);
-    --back-footer-buttons: rgb(193, 193, 193);
+.debug .meet
+{
+	background-color: var(--discord-light);
 }
 
-.debug header {
-    /* background-color: var(--back-header); */
-    background-color: var(--brand);
-    /* border: dashed 1px rgb(50, 50, 255); */
+.debug [class^="col-"]
+{
+	background-color: red;
+	border: 1px dashed black;
+	height: 200px;
 }
 
-.debug .row-header {
-    /* background-color: var(--back-row-header); */
-    background-color: var(--brand);
-    /* border: dashed 1px rgb(50, 50, 255); */
+/* #region Common */
+
+*
+{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
 }
 
-/* .debug .header-logo {
-    border: dashed 1px rgb(50, 50, 255);
-} */
-
-/* .debug .header-login {
-    border: dashed 1px rgb(50, 50, 255);
-} */
-
-/* .debug .col1 {
-    border: dashed 1px rgb(50, 50, 255);
-} */
-
-.debug .breathing-space {
-    height: 50px;
-    width: 100%;
-    background-color: var(--brand);
+body
+{
+	font-family: 'Montserrat', sans-serif;
 }
 
-.debug .imagine-a-space-div1 {
-    width: 100%;
-    background-color: var(--brand);
-    background-image: url("../images/stars.svg");
-    background-repeat: repeat-x;
-    
+:root
+{
+	--discord-primary: #3061e1FF;
+	--discord-accent: #8ea1e1FF;
+	--discord-black: #23262bFF;
+	--discord-light: #f0f0f0;
+	--discord-white: #F6F7F7;
 }
 
-.debug .imagine-a-space-div2 {
-    width: 100%;
-    height: fit-content;
+p
+{
+	line-height: 1.5rem;
 }
 
-.debug .imagine-a-space-div3 {
-    display: flex;
-    align-content: space-between;
-    justify-content: space-evenly;
+section
+{
+	padding: 3.5rem 0;
 }
 
-.debug .p1-first-submain {
-    background-color: white;
-    color: black;
-    font-family: sans-serif;
-    font-size: large;
-    padding: 20px 20px 20px 20px;
-    border-radius: 35px;
+section h3
+{
+	font-size: 2.5rem;
+	margin-bottom: 1.5rem;
 }
 
-.debug .p2-first-submain {
-    background-color: black;
-    color: white;
-    font-family: sans-serif;
-    font-size: large;
-    padding: 20px 20px 20px 20px;
-    border-radius: 35px;
+a
+{
+	text-decoration: none;
 }
 
-.debug .first-submain-blue {
-    /* display: flex; */
-    width: 100%;
-    height: 250px;
-    /* background-color: var(--back-first-submain-blue); */
-    background-image: url("../images/subheader-main-crew.png");
-    background-position-y: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    /* border: dashed 1px rgb(50, 50, 255); */
+/* #endregion Common */
+
+/* #region Utility */
+/* Layout */
+.container
+{
+	width: 80%;
+	max-width: 1152px;
+	margin: auto
 }
 
-.debug .rectangle-purple1{
-    /* background-color: var(--back-rectangle-purple); */
-    backface-visibility: visible;
-    /* border: dashed 1px rgb(50, 50, 255); */
+.row
+{
+	display: flex;
+	flex-wrap: wrap;
+	margin: 0 -1rem
 }
 
-.debug .second-fourth-submain {
-    display: flex;
-    height: 400px;
-    font-variant: var(--back-second-fourth-submain-light);
-    border: dashed 1px rgb(50, 50, 255);
+[class^="col-"]
+{
+	padding-left: 1rem;
+	padding-right: 1rem;
 }
 
-.debug .rectangle-blue {
-    background-color: var(--back-rectangle-blue);
-    border: dashed 1px rgb(50, 50, 255);
+.col-2
+{
+	width: calc((100% / 12) * 2);
 }
 
-.debug .rectangle-pink {
-    background-color: var(--back-rectangle-pink);
-    border: dashed 1px rgb(50, 50, 255);
+.col-4
+{
+	width: calc((100% / 12) * 4);
 }
 
-.debug .third-fifth-submain {
-    height: 400px;
-    display: flex;
-    background-color: var(--back-third-fifth-submain-grey);
-    border: dashed 1px rgb(50, 50, 255);
+.col-8
+{
+	width: calc((100% / 12) * 8);
 }
 
-.debug .rectangle-green {
-   background-color: var(--back-rectangle-green);
-   border: dashed 1px rgb(50, 50, 255); 
+.d-flex
+{
+	display: flex;
 }
 
-.debug .sixth-submain {
-    display: flex;
-    justify-content: center;
-    height: 400px;
-    background-color: var(--back-sixth-submain-footer-black);
-    border-top: dashed 1px rgb(50, 50, 255);
-    border-bottom: solid 2px white;
+.align-items-center
+{
+	align-items: center;
+}
+
+.justify-content-between
+{
+	justify-content: space-between;
+}
+
+/* Buttons */
+.btn
+{
+	text-decoration: none;
+	display: inline-block;
+	background-color: transparent;
+	border: none;
+	padding: 0.25rem 0.5rem;
+	border-radius: 1rem;
+	font-size: 14px;
+}
+
+.btn-lg
+{
+	padding: 0.75rem 1rem;
+	border-radius: 1.5rem;
+}
+
+.btn-light
+{
+	background-color: var(--discord-light);
+	color: var(--discord-black);
+}
+
+.btn-dark
+{
+	background-color: var(--discord-black);
+	color: var(--discord-white);
+}
+
+.btn-accent
+{
+	background-color: var(--discord-accent);
+	color: var(--discord-white);
+}
+
+/* Spacings */
+.mb-3
+{
+	margin-bottom: 1.5rem;
+}
+
+hr.divider
+{
+	border: 1px solid #8ea1e140;
+	margin: 1rem 0;
+}
+
+/* Typography */
+.text-center
+{
+	text-align: center;
+}
+
+/* #endregion Utility */
+
+/* #region Header */
+#site_header
+{
+	color: var(--discrod-white);
+	background-color: var(--discord-primary);
+	padding: 0.5rem 0;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+}
+
+#site_header nav .logo,
+#site_header nav .signin
+{
+	flex-grow: 1;
+}
+
+#site_header nav .menu
+{
+	flex-grow: 2;
+	text-align: center;
+	list-style: none;
+	display: flex;
+	gap: 0.5rem;
+	justify-content: center;
+	/*
+	Css nesting (new)
+ 	& li
+	{
+		display: inline-block;
+	} */
 
 }
 
-.debug .rectangle-purple2 {
-    background-color: var(--back-rectangle-purple);
-    border: dashed 1px rgb(50, 50, 255);
+/* .menu li
+{
+	display: inline-block;
+}
+ */
+
+.menu a
+{
+	color: var(--discord-white);
+
 }
 
-.debug .narrow-rectangles-blue {
-    background-color: var(--back-narrow-rectangles-blue);
-    border: dashed 1px rgb(50, 50, 255);
+.signin
+{
+	text-align: end;
 }
 
-.debug footer {
-    background-color: var(--back-sixth-submain-footer-black);
+/* #endregion Header */
+
+/* #region Main */
+#site_main
+{
+	padding-top: 50px;
 }
 
+.jumbotron
+{
+	background-color: var(--discord-primary);
+	background-image: url('../images/subheader-main-crew.png');
+	background-size: cover;
+	background-position: center;
+	text-align: center;
 
-.debug .footer-row {
-    background-color: var(--back-footer-row-aqua);
-    border: dashed 1px rgb(50, 50, 255);
 }
 
-.debug .footer-logo {
-    height: 50%;
-    background-color: var(--back-footer-buttons);
-    border: dashed 1 px black;
+.jumbotron .container
+{
+	padding: 8rem 12rem;
 }
 
-.debug .footer-bottone {
-    height: 50%;
-    background-color: var(--back-footer-buttons);
-    border: dashed 1px black;
+.jumbotron h2
+{
+	font-size: 3.5rem;
+	color: white;
+	margin-bottom: 2rem;
 }
 
-
-
-/*CONTAINER*/
-
-/* .container {
-    display: flex;
-} */
-
-/* HEADER */
-body {
-    max-width: 1550px;
-    min-width: 110px;
+.jumbotron p
+{
+	margin-bottom: 1.5rem;
 }
 
-header {
-    overflow-y: auto;
+section.meet,
+section.reliable
+{
+	background-color: var(--discord-light);
 }
 
-.row-header {
-    display: flex;
-    width: 90%;
-    height: 80%;
-    margin: 10px auto auto auto;
-    padding-top: 20px;
+.wave
+{
+	color: #f0f0f0;
+	margin-bottom: -0.25rem;
 }
 
-.header-logo {
-    margin: auto;
-    width: calc((100%/12)*1);
-    text-align: left;
+.wave-bottom
+{
+	transform: rotate(180deg);
+	margin-top: -6px;
 }
 
-.header-login {
-    margin: auto;
-    width: calc((100%/12)*1);
-    text-align: right;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: small;
-    /* padding: 6px 6px 6px 6px; */
+/* #endregion Main */
+
+/* #region Footer */
+
+footer
+{
+	background-color: var(--discord-black);
+	color: var(--discord-white);
+	padding: 3rem 0;
 }
 
-.header-login-subdiv {
-    background-color: #fff;
-    display: unset;
-    padding: 10px 15px 10px 15px;
-    border-radius: 20px;
+footer h5,
+footer h2
+{
+	color: var(--discord-accent);
+	margin-bottom: 1rem;
 }
 
-.col1 {
-    margin: auto 0 auto 0;
-    width: calc((100%/12)*1);
-    text-align: center;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: small;
-    font-weight: 500;
-    text-decoration: none;
-    color: white;
+footer .language
+{
+	display: flex;
+	align-items: center;
+	gap: 2px;
+	margin: 1rem 0;
 }
 
-h1 {
-    text-align: center;
-    font-size: 60px;
-    font-family: sans-serif;
-    font-weight:bolder;
-    color: white;
+footer ul
+{
+	list-style: none;
+
+	& a
+	{
+		color: var(--discord-white);
+		font-size: 14px;
+		line-height: 1.5rem;
+	}
+
 }
 
-h2 {
-    text-align: center;
-    font-size: large;
-    font-family: sans-serif;
-    color: white;
-    padding-top: 20px;
-    padding-bottom: 20px;
-}
-
-
-
-.rectangle-purple1 {
-    width: 50%;
-    height: 80%;
-    margin: auto;
-}
-
-.rectangle-blue {
-    height: 80%;
-    margin: auto;
-}
-
-.rectangle-pink {
-    height: 80%;
-    margin: auto;
-}
-
-.rectangle-green {
-    height: 80%;
-    width: 50%;
-    margin: auto;
-}
-
-.rectangle-purple2 {
-    width: calc((100%/12)*2);
-    height: 80%;
-    margin-top: auto;
-    margin-bottom: auto;
-}
-
-.narrow-rectangles-blue {
-    width: calc((100%/12)*1);
-    height: 80%;
-    margin-top: auto;
-    margin-bottom: auto;
-}
-
-.footer-row {
-    display: flex;
-    justify-content: space-between;
-    height: 80%;
-    width: 80%;
-    margin: auto auto 0 auto;
-}
-
-.footer-logo {
-    height: 50%;
-    color: black;
-    padding: 5px 7px 5px 7px;
-}
-
-.footer-bottone {
-    height: 50%;
-    color: black;
-    padding: 5px 7px 5px 7px;
-}
-
+/* #endregion Footer */
